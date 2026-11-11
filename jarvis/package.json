@@ -1,0 +1,36 @@
+{
+  "name": "jarvis-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A personal Jarvis-style assistant that runs on your own computer: email, calendar, WhatsApp, web.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "jarvis": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js start",
+    "chat": "node src/index.js chat",
+    "brief": "node src/index.js brief",
+    "doctor": "node src/index.js doctor",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "html-to-text": "^10.0.1",
+    "imapflow": "^2.11.0",
+    "mailparser": "^3.14.3",
+    "node-ical": "^0.27.6",
+    "nodemailer": "^10.5.0",
+    "qrcode": "^1.5.4"
+  },
+  "optionalDependencies": {
+    "baileys": "^7.0.0-rc14"
+  },
+  "devDependencies": {
+    "hoodiecrow-imap": "^3.3.1",
+    "smtp-server": "^3.21.4"
+  }
+}

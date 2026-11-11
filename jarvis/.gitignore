@@ -1,0 +1,6 @@
+node_modules/
+# Your settings and secrets
+.env
+# Drafts, notifications and the WhatsApp session live here
+data/
+*.log
